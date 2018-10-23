@@ -1,3 +1,6 @@
+DELETE vendor/github2018
+
+
 # charts2018
 
 ### Charts is a multi-library chart package to create interactive charts using laravel.
