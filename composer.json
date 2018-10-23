@@ -1,4 +1,7 @@
 {
+    "name": "github2018/charts",
+    "description": "Create charts for laravel using different charts libraries",
+    "license": "MIT",
     "require": {
         "consoletvs/charts": "5.*"
     }
