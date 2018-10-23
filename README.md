@@ -39,7 +39,9 @@ To install charts use composer
 ### Download
 
 ```
-composer require hilioski/charts
+composer require github2018/charts
+
+//composer require hilioski/charts
 ```
 
 ### Add service provider & alias
