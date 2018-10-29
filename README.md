@@ -281,7 +281,23 @@ The available methods are:
 	```
 
 	![Example GroupBy](https://i.gyazo.com/30183fa75f6bee6848898c4dbe487491.png)
+////////////////////
+                $users = User::where(DB::raw("(DATE_FORMAT(created_at,'%Y'))"),date('Y')) 
 
+                        ->get();
+
+                $chart = Charts::database($users, 'bar', 'highcharts') 
+
+                            ->title("Monthly new Register Users") 
+
+                            ->elementLabel("Total Users") 
+
+                            ->dimensions(1000, 500) 
+
+                            ->responsive(true) 
+
+                            ->groupByMonth(date('Y'), true);
+			    //////////////////////////////////
 - groupByYear(optional int $years)
 
 	Groups the data based in years.
